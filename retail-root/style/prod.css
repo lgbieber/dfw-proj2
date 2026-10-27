@@ -1,0 +1,155 @@
+body{
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.header{
+    grid-column: 1 / -1;
+    grid-row: 1;
+}
+
+h1{
+    grid-column: 1 / -1;
+    grid-row: 2;
+    font-family: Impact, sans-serif;
+    font-size: 1000%;
+    text-align: left;
+    margin-top: -2%;
+    margin-bottom: -3%;
+}
+
+h2{
+    font-family: Impact, sans-serif;
+    text-align: right;
+    font-size: 500%;
+}
+
+body > img{
+    width: 100%;
+}
+
+body > img:nth-of-type(1){
+    grid-column: 1 / 7;
+    grid-row: 3;
+}
+
+.product-copy{
+    grid-column: 7 / -1;
+    grid-row: 3;
+    align-self: center;
+}
+
+.product-copy p{
+    text-align: justify;
+    line-height: 1.7;
+}
+
+.product-copy ul{
+    line-height: 1.8;
+    font-family: monospace;
+}
+
+body > img:nth-of-type(2){
+    grid-column: 1 / 5;
+    grid-row: 4;
+}
+
+body > img:nth-of-type(3){
+    grid-column: 5 / 9;
+    grid-row: 4;
+}
+
+body > img:nth-of-type(4){
+    grid-column: 9 / -1;
+    grid-row: 4;
+}
+
+.artist-section{
+    grid-column: 1 / -1;
+    grid-row: 5;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    align-items: start;
+}
+
+.artist-images{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.artist-images img{
+    width: 100%;
+}
+
+.artist-images a img{
+    transition: transform 0.2s ease;
+}
+
+.artist-images a:hover img{
+    transform: scale(1.2);
+}
+
+.artist-section a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.artist-images a{
+    display: block;
+}
+
+.artist-copy h2{
+    margin-top: 0;
+}
+
+.artist-copy h2 a{
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.artist-copy h2 a:hover{
+    transform: scale(1.1);
+}
+
+.artist-copy-text{
+    text-align: justify;
+    line-height: 1.7;
+    font-family: system-ui, sans-serif;
+    display:block;
+    margin-top: -10%;
+}
+
+#footer{
+    grid-column: 1 / -1;
+    grid-row: 6;
+}
+
+@media (max-width: 700px){
+    body{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    body > .header,
+    body > h1,
+    body > p,
+    body > .product-copy,
+    body > img,
+    body > #footer{
+        grid-column: 1 / -1;
+        grid-row: auto;
+    }
+
+    .artist-section{
+        grid-template-columns: 1fr;
+        grid-column: 1 / -1;
+        grid-row: auto;
+    }
+
+    .artist-images{
+        grid-template-columns: 1fr;
+    }
+}

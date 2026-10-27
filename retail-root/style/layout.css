@@ -1,0 +1,14 @@
+body{
+    margin-inline: 50px;
+}
+
+h1{
+    line-height: 85%;
+    margin-bottom: 5%;
+}
+
+@media (max-width: 700px){
+    body{
+        margin-inline: 20px;
+    }
+}

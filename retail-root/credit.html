@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style/layout.css">
+        <link rel="stylesheet" href="style/header.css">
+        <link rel="stylesheet" href="style/footer.css">
+        <link rel="stylesheet" href="style/index.css">
+    </head>
+    <body id="top">
+        <div class="header">
+            <h3 id="title"><a href="index.html">HoMe</a></h3>
+            <h3 id="about"><a href="about.html">aBouT</a></h3>
+            <h3 id="artists"><a href="credit.html">aRTiSTS</a></h3>
+        </div>
+        <div class="content">
+            <h1>MeeT THe aRTiSTS</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, assumenda? Sed recusandae consectetur cumque quia labore officia beatae doloremque ea assumenda sit perferendis, eos temporibus, ratione et nulla at hic.</p>
+            <div class="product prod1">
+                <button class="artist-image-button" type="button" aria-label="Open artist 1 popup" aria-controls="artist-1-popup">
+                    <img src="img/placeholder.png" alt="artist 1">
+                </button>
+                <h3>lucien bieber</h3>
+            </div>
+            <div class="product prod2">
+                <button class="artist-image-button" type="button" aria-label="Open artist 2 popup" aria-controls="artist-2-popup">
+                    <img src="img/placeholder.png" alt="artist 2">
+                </button>
+                <h3>irene duplantier</h3>
+            </div>
+            <div class="product prod3">
+                <button class="artist-image-button" type="button" aria-label="Open artist 3 popup" aria-controls="artist-3-popup">
+                    <img src="img/placeholder.png" alt="artist 3">
+                </button>
+                <h3>cole feigner</h3>
+            </div>
+            <div class="product prod4">
+                <button class="artist-image-button" type="button" aria-label="Open artist 4 popup" aria-controls="artist-4-popup">
+                    <img src="img/placeholder.png" alt="artist 4">
+                </button>
+                <h3>max girerd</h3>
+            </div>
+        </div>
+        <dialog class="artist-popup" id="artist-1-popup" aria-labelledby="artist-1-title">
+            <form method="dialog">
+                <button class="artist-popup-close" aria-label="Close popup">×</button>
+            </form>
+            <div class="artist-popup-copy">
+                <h1 id="artist-1-title">lucien bieber</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, assumenda? Sed recusandae consectetur cumque quia labore officia beatae doloremque ea assumenda sit perferendis, eos temporibus, ratione et nulla at hic.</p>
+                <h3>Unordered List Title</h3>
+                <ul>
+                    <li>List item one</li>
+                    <li>List item two</li>
+                    <li>List item three</li>
+                </ul>
+            </div>
+            <img src="img/placeholder.png" alt="artist image">
+        </dialog>
+        <dialog class="artist-popup" id="artist-2-popup" aria-labelledby="artist-2-title">
+            <form method="dialog">
+                <button class="artist-popup-close" aria-label="Close popup">×</button>
+            </form>
+            <div class="artist-popup-copy">
+                <h1 id="artist-2-title">irene duplantier</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, assumenda? Sed recusandae consectetur cumque quia labore officia beatae doloremque ea assumenda sit perferendis, eos temporibus, ratione et nulla at hic.</p>
+                <h3>Unordered List Title</h3>
+                <ul>
+                    <li>List item one</li>
+                    <li>List item two</li>
+                    <li>List item three</li>
+                </ul>
+            </div>
+            <img src="img/placeholder.png" alt="artist image">
+        </dialog>
+        <dialog class="artist-popup" id="artist-3-popup" aria-labelledby="artist-3-title">
+            <form method="dialog">
+                <button class="artist-popup-close" aria-label="Close popup">×</button>
+            </form>
+            <div class="artist-popup-copy">
+                <h1 id="artist-3-title">cole feigner</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, assumenda? Sed recusandae consectetur cumque quia labore officia beatae doloremque ea assumenda sit perferendis, eos temporibus, ratione et nulla at hic.</p>
+                <h3>Unordered List Title</h3>
+                <ul>
+                    <li>List item one</li>
+                    <li>List item two</li>
+                    <li>List item three</li>
+                </ul>
+            </div>
+            <img src="img/placeholder.png" alt="artist image">
+        </dialog>
+        <dialog class="artist-popup" id="artist-4-popup" aria-labelledby="artist-4-title">
+            <form method="dialog">
+                <button class="artist-popup-close" aria-label="Close popup">×</button>
+            </form>
+            <div class="artist-popup-copy">
+                <h1 id="artist-4-title">max girerd</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, assumenda? Sed recusandae consectetur cumque quia labore officia beatae doloremque ea assumenda sit perferendis, eos temporibus, ratione et nulla at hic.</p>
+                <h3>Unordered List Title</h3>
+                <ul>
+                    <li>List item one</li>
+                    <li>List item two</li>
+                    <li>List item three</li>
+                </ul>
+            </div>
+            <img src="img/placeholder.png" alt="artist image">
+        </dialog>
+        <div id="footer">
+            <p class="footer-navigation"><a href="#top">BaCK To ToP</a> | <a href="index.html">BaCK To HoMe</a></p>
+            <p id="contact-info">lucien bieber: <a href="tel:+14157168634">(415) 716-8634</a> | <a href="mailto:lucienbieber@gmail.com">lucienbieber@gmail.com</a> | <a href="https://www.instagram.com/lucien.gael_/?hl=en" target="_blank" rel="noopener noreferrer">@lucien.gael_</a></p>
+            <p class="studio-copyright">Gael Studios 2026 copyright ©️</p>
+        </div>
+        <script src="artist-popup.js"></script>
+    </body>
+</html>
