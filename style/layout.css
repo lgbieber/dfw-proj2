@@ -2,6 +2,11 @@ body{
     margin-inline: 50px;
 }
 
+.dillon-headshot{
+    box-sizing: border-box;
+    border: 1px solid #000;
+}
+
 h1{
     line-height: 85%;
     margin-bottom: 5%;

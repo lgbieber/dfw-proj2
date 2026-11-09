@@ -25,6 +25,15 @@
     text-decoration: none;
 }
 
+.header-logo{
+    display: block;
+    width: clamp(56px, 7vw, 96px);
+    aspect-ratio: 250.4 / 251;
+    background-color: currentColor;
+    -webkit-mask: url("../img/tha-shop-logotype.svg") center / contain no-repeat;
+    mask: url("../img/tha-shop-logotype.svg") center / contain no-repeat;
+}
+
 .header #about a,
 .header #artists a{
     color: inherit;

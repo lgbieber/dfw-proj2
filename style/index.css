@@ -31,6 +31,19 @@ img:hover{
     transform: scale(1.2);
 }
 
+.dvd-bouncer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: clamp(48px, 7vw, 80px);
+    aspect-ratio: 250.4 / 251;
+    background-color: #FF0000;
+    -webkit-mask: url("../img/tha-shop-logotype.svg") center / contain no-repeat;
+    mask: url("../img/tha-shop-logotype.svg") center / contain no-repeat;
+    pointer-events: none;
+}
+
 .artist-popup img,
 .artist-popup img:hover{
     transform: none;
@@ -43,6 +56,8 @@ img:hover{
 
 .product img{
     display: block;
+    aspect-ratio: 1;
+    object-fit: cover;
 }
 
 .product h3{
